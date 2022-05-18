@@ -12,6 +12,31 @@ import com.whitedragon.service.StudentService;
 @Service
 public class StudentDAO implements StudentService {
 
+/*  This is Constructor Injection
+*   
+*	private StudentRepository studentRepository;
+*
+*	public StudentDAO(StudentRepository studentRepository) {
+*		this.studentRepository = studentRepository;
+*	}
+*/	
+	
+/*  This is Setter Injection
+*   
+*	private StudentRepository studentRepository;
+*
+*   @Autowire  // requires autowire and setter
+*	public setStudentDAO(StudentRepository studentRepository) {
+*		this.studentRepository = studentRepository;
+*	}
+*/		
+
+/*  This is Field Injection
+*   
+*   @Autowire
+*	private StudentRepository studentRepository;
+*/		
+	
 	private StudentRepository studentRepository;
 
 	@Autowired // name is optional and so is autowire because there is only one constructor
